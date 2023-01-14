@@ -265,7 +265,9 @@ footer {
 .information li:last-child {
   border-right: 0;
 }
-
+.information p{
+  background: #fee134;
+}
 /* .information li {
   position: relative;
   padding: 0 10px;
