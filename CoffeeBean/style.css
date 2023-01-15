@@ -250,13 +250,18 @@ footer {
 .footer--imfo {
   border-top: 1px solid rgb(95, 77, 63);
   padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .information {
   margin-top: 30px;
+  font-family: 'NanumBarunGothic';
+  font-size: 13px;
 }
 .information ul {
   position: relative;
   display: flex;
+  line-height: 25px;
 }
 .information li {
   padding: 0 5px;
@@ -266,7 +271,14 @@ footer {
   border-right: 0;
 }
 .information p{
-  background: #fee134;
+  line-height: 24px;
+}
+.footer--sns {
+  background: skyblue;
+  width: 205px;
+  height: 53px;
+  margin: 30px 0 0;
+  padding: 6.5px 0;
 }
 /* .information li {
   position: relative;
