@@ -1,0 +1,477 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Archer Semibold";
+  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot");
+  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.svg#Archer Semibold")
+      format("svg");
+}
+.nanumbarungothic * {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+/* 전체 */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* layout */
+.layout--width {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+.util_menu {
+  background: #eee;
+  height: 40px;
+}
+.util_menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.util_menu ul li {
+  line-height: 40px;
+  margin-right: 20px;
+}
+.util_menu ul li a {
+  font-family: "NanumBarunGothic";
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 40px;
+}
+.util_menu ul li.login {
+  padding-right: 20px;
+  border-right: 1px solid rgb(228, 228, 228);
+}
+.btn_h_mbr {
+  background: rgb(47, 28, 17);
+  width: 60px;
+  height: 40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.inner_header1 {
+  height: 100px;
+  margin: 0 auto;
+}
+.inner_header2 {
+  display: flex;
+  width: 1200px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.gnb ul {
+  display: flex;
+}
+.gnb ul li {
+  padding: 30px;
+}
+.gnb ul li a {
+  font-weight: 700;
+}
+/* body */
+/* --배너 */
+
+/* --제품리스트 */
+.prod--list--wrap {
+  text-align: center;
+  color: #333;
+}
+.md--list {
+  position: relative;
+}
+.md--box--wrap {
+  display: flex;
+}
+.md--box .md--img {
+  width: 300px;
+  height: 300px;
+}
+.md--box {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.md--box {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.md--box .md--price {
+  font-size: 14px;
+}
+.md--tit {
+  font-size: 18px;
+  font-family: "Archer Semibold", "NanumBarunGothic";
+  font-weight: 700;
+  margin: 15px 0;
+}
+.md--txt {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.md--price {
+  font-size: 14px;
+  font-family: "NanumBarunGothic";
+  color: #cf661a;
+}
+.new--tit {
+  margin: 0 0 15px;
+  color: #cf661a;
+  font-size: 18px;
+  font-family: "Archer Semibold", "NanumBarunGothic";
+}
+.new--box .new--img {
+  width: 380px;
+  height: 470px;
+  background-color: #fdd835;
+}
+.new--box--wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.new--box .new--tit {
+  margin: 15px auto;
+  font-size: 18px;
+}
+
+.btn--list1:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* margin-top: -10px; */
+  border-left: 8px solid #f38200;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  margin: 0 0 0 -57px;
+}
+.btn--list2::before {
+  content: "";
+  position: absolute;
+  border-right: 2.5px solid #eee;
+  height: 15px;
+  top: 100%;
+}
+.btn--list3::before {
+  content: "";
+  position: absolute;
+  border: 8px solid #f38200;
+  border-radius: 50%;
+  margin-left: 20px;
+  top: 100%;
+}
+.btn--list4::before {
+  content: "";
+  position: absolute;
+  border: 8px solid #eee;
+  border-radius: 50%;
+  margin-left: 45px;
+  top: 100%;
+}
+
+/* sns */
+.sns--wrap {
+  padding: 55px 0 40px;
+  background-color: rgb(124, 81, 161);
+}
+.sns--tit {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Archer-Semibold", "NanumBarunGothic";
+}
+.sns--img1 {
+  display: flex;
+}
+.sns--img1 .img {
+  width: 200px;
+  height: 200px;
+}
+.sns--img2 {
+  display: flex;
+}
+.sns--img2 .img {
+  width: 200px;
+  height: 200px;
+}
+.sns--btn {
+  margin: 30px auto 0;
+}
+.sns--btn .btn--insta {
+  background: #f38200;
+  color: white;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 14px;
+  font-family: "Archer Semibold";
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* footer */
+.footer--bg {
+  background-color: #e2e2e2;
+}
+.footer--site {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 0 50px;
+}
+.footer--site {
+  color: #4b2616;
+}
+.footer--tit {
+  font-size: 18px;
+  color: rgb(207, 102, 26);
+  margin: 0 0 20px;
+  font-family: "Archer Semibold";
+}
+.footer--site ul li {
+  font-size: 13px;
+  font-family: "NanumBarunGothic";
+  margin-bottom: 10px;
+}
+.footer--imfo {
+  border-top: 1px solid rgb(95, 77, 63);
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.information {
+  margin-top: 30px;
+  font-family: "NanumBarunGothic";
+  font-size: 13px;
+  color: #5f4d3f;
+}
+.information ul {
+  position: relative;
+  display: flex;
+  line-height: 25px;
+}
+.information li {
+  padding: 0 10px;
+  position: relative;
+}
+.information li::before {
+  content: "|";
+  position: absolute;
+  /* background: #5f4d3f; */
+  top: 50%;
+  right: 0;
+  /* width: 1.5px;
+  height: 50%;*/
+  transform: translateY(-50%);
+}
+.information li:last-child::before {
+  display: none;
+}
+.information li:first-child {
+  padding-left: 0;
+}
+.information p {
+  line-height: 24px;
+}
+.footer--sns {
+  background: skyblue;
+  width: 205px;
+  height: 53px;
+  margin: 30px 0 0;
+  padding: 6.5px 0;
+}
+.fs01 {
+  color: #cfs661a;
+}
+.fs02 {
+  font-weight: bold;
+}
+.fs03 {
+  font-size: 24px;
+  margin: 55px auto 35px;
+  color: #cf661a;
+  font-family: "Archer Semibold";
+}
+/* color */
+.red01 {
+  background-color: #ffebee;
+}
+.red02 {
+  background-color: #ffcdd2;
+}
+.red03 {
+  background-color: #ef9a9a;
+}
+.red04 {
+  background-color: #e57373;
+}
+.red05 {
+  background-color: #ef5350;
+}
+.red06 {
+  background-color: #f44336;
+}
+.red07 {
+  background-color: #e53935;
+}
+.red08 {
+  background-color: #d32f2f;
+}
+.red09 {
+  background-color: #c62828;
+}
+.red10 {
+  background-color: #b71c1c;
+}
+.red11 {
+  background-color: #ff8a80;
+}
+.red12 {
+  background-color: #ff5252;
+}
+
+.purple01 {
+  background-color: #f3e5f5;
+}
+.purple02 {
+  background-color: #e1bee7;
+}
+.purple03 {
+  background-color: #ce93d8;
+}
+.purple04 {
+  background-color: #ba68c8;
+}
+.purple05 {
+  background-color: #ab47bc;
+}
+.purple06 {
+  background-color: #9c27b0;
+}
+.purple07 {
+  background-color: #8e24aa;
+}
+.purple08 {
+  background-color: #7b1fa2;
+}
+.purple09 {
+  background-color: #6a1b9a;
+}
+.purple10 {
+  background-color: #4a148c;
+}
+
+.green01 {
+  background-color: #e8f5e9;
+}
+.green02 {
+  background-color: #c8e6c9;
+}
+.green03 {
+  background-color: #a5d6a7;
+}
+.green04 {
+  background-color: #81c784;
+}
+.green05 {
+  background-color: #66bb6a;
+}
+.green06 {
+  background-color: #4caf50;
+}
+.green07 {
+  background-color: #43a047;
+}
+.green08 {
+  background-color: #388e3c;
+}
+.green09 {
+  background-color: #2e7d32;
+}
+.green10 {
+  background-color: #1b5e20;
+}
+
+.yellow01 {
+  background-color: #fffde7;
+}
+.yellow02 {
+  background-color: #fff9c4;
+}
+.yellow03 {
+  background-color: #fff59d;
+}
+.yellow04 {
+  background-color: #fff176;
+}
+.yellow05 {
+  background-color: #ffee58;
+}
+.yellow06 {
+  background-color: #ffeb3b;
+}
+.yellow07 {
+  background-color: #fdd835;
+}
+.yellow08 {
+  background-color: #fbc02d;
+}
+.yellow09 {
+  background-color: #f9a825;
+}
+.yellow10 {
+  background-color: #f57f17;
+}
