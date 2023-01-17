@@ -179,7 +179,6 @@
 .new--box--wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 .new--box{
   width: 380px;
@@ -190,39 +189,56 @@
   font-size: 18px;
 }
 
-.btn--list1:before {
+.slider--btn {
+  background-color: salmon;
+  position: relative
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.test .play {
+  position: relative;
+  width: 8px;
+  height: 16px;
+}
+
+.test .play:before {
   content: "";
   position: absolute;
-  top: 100%;
-  /* margin-top: -10px; */
+  
   border-left: 8px solid #f38200;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  margin: 0 0 0 -50px;
+  top: 0;
+  left: 0;
 }
-.btn--list2::before {
-  content: "";
+.test .play:after{
+  content: '';
   position: absolute;
-  border-right: 2.5px solid #eee;
-  height: 15px;
-  top: 100%;
+  top: 0;
+  right: -20px;
+  width: 2px;
+  height: 100%;
+  background-color: #eee;
 }
-.btn--list3::before {
-  content: "";
-  position: absolute;
-  border: 8px solid #f38200;
+.test .dots {
+  display: flex;
+  gap: 10px;
+}
+.test .dots .dot{
+  background-color: #eee;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  margin-left: 20px;
-  top: 100%;
 }
-.btn--list4::before {
-  content: "";
-  position: absolute;
-  border: 8px solid #eee;
-  border-radius: 50%;
-  margin-left: 45px;
-  top: 100%;
+.test .dots .dot.active{
+  background-color: salmon;
 }
+
+
 
 /* sns */
 .sns--wrap {
@@ -317,8 +333,6 @@
   position: absolute;
   top: 50%;
   right: 0;
-  /* width: 1.5px;
-  height: 50%;*/
   transform: translateY(-50%);
 }
 .information li:last-child::before {
