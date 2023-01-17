@@ -197,18 +197,18 @@
 .test {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 40px; /*gap 을 이용하여 사이 간격 벌려주기 , margin 을 사용해도 되지만 margin 은 원하는 사이만의 거리를 늘릴 수 없음 */
 }
 .test .play {
-  position: relative;
+  /* position: relative;  */
   width: 8px;
   height: 16px;
+  position: relative;
 }
 
 .test .play:before {
   content: "";
   position: absolute;
-  
   border-left: 8px solid #f38200;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
