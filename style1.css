@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Archer Semibold";
+  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot");
+  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.svg#Archer Semibold")
+      format("svg");
+}
+.nanumbarungothic * {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+/* 전체 */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* layout */
+.layout--width {
+  max-width: 1200px;
+  /* width: 100%; */
+  margin: 0 auto;
+}
+
+/* header */
+
+.util_menu {
+  background: #eee;
+  height: 40px;
+}
+.util_menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.util_menu ul li {
+  line-height: 40px;
+  margin-right: 20px;
+}
+.util_menu ul li a {
+  font-family: "NanumBarunGothic";
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 40px;
+}
+.util_menu ul li.login {
+  padding-right: 20px;
+  border-right: 1px solid rgb(228, 228, 228);
+}
+.btn_h_mbr {
+  background: rgb(47, 28, 17);
+  width: 60px;
+  height: 100%;
+}
+.inner_header1 {
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+
+}
+.inner_header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 100%;
+}
+.logo{
+  width: 93px;
+}
+.gnb ul {
+  display: flex;
+}
+.gnb ul li {
+  padding: 30px;
+}
+.gnb ul li a {
+  font-weight: 700;
+}
+.btnSearch{
+  width: 20px;
+  font-size: 20px;
+  color: #f38200;
+}
+
+/* body */
+/* --배너 */
+
+/* --제품리스트 */
+.prod--list--wrap {
+  text-align: center;
+  color: #333;
+}
+.md--box{
+  height: 455px;
+  width: 300px;
+  background: transparent;
+}
+.md--list {
+  position: relative;
+}
+.md--box--wrap {
+  display: flex;
+}
+.md--img {
+  width: 300px;
+  height: 300px;
+}
+.md--price {
+  font-size: 14px;
+}
+.md--tit {
+  font-size: 18px;
+  font-family: "Archer Semibold", "NanumBarunGothic";
+  font-weight: 700;
+  margin: 15px 0;
+}
+.md--txt {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.md--price {
+  font-size: 14px;
+  font-family: "NanumBarunGothic";
+  color: #cf661a;
+}
+.new--list{
+  position: relative;
+}
+.new--tit {
+  margin: 0 0 15px;
+  color: #cf661a;
+  font-size: 18px;
+  font-family: "Archer Semibold", "NanumBarunGothic";
+}
+.new--img {
+  width: 380px;
+  height: 470px;
+}
+.new--box--wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.new--box{
+  width: 380px;
+  height: 585px;
+}
+.new--tit {
+  margin: 15px auto;
+  font-size: 18px;
+}
+
+.slider--btn {
+  background-color: salmon;
+  position: relative
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /*gap 을 이용하여 사이 간격 벌려주기 , margin 을 사용해도 되지만 margin 은 원하는 사이만의 거리를 늘릴 수 없음 */
+}
+.test .play {
+  /* position: relative;  */
+  width: 8px;
+  height: 16px;
+  position: relative;
+}
+
+.test .play:before {
+  content: "";
+  position: absolute;
+  border-left: 8px solid #f38200;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  top: 0;
+  left: 0;
+}
+.test .play:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 2px;
+  height: 100%;
+  background-color: #eee;
+}
+.test .dots {
+  display: flex;
+  gap: 10px;
+}
+.test .dots .dot{
+  background-color: #eee;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.test .dots .dot.active{
+  background-color: salmon;
+}
+
+
+
+/* sns */
+.sns--wrap {
+  padding: 55px 0 40px;
+  background-color: rgb(124, 81, 161);
+  margin-top: 50px;
+}
+.sns--tit {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Archer-Semibold", "NanumBarunGothic";
+}
+.sns--img1 {
+  display: flex;
+}
+.sns--img1 .img {
+  width: 200px;
+  height: 200px;
+}
+.sns--img2 {
+  display: flex;
+}
+.sns--img2 .img {
+  width: 200px;
+  height: 200px;
+}
+.sns--btn {
+  margin: 30px auto 0;
+}
+.sns--btn .btn--insta {
+  background: #f38200;
+  color: white;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 14px;
+  font-family: "Archer Semibold";
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* footer */
+.footer--bg {
+  background-color: #e2e2e2;
+}
+.footer--site {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 0 50px;
+}
+.footer--site {
+  color: #4b2616;
+}
+.footer--tit {
+  font-size: 18px;
+  color: rgb(207, 102, 26);
+  margin: 0 0 20px;
+  font-family: "Archer Semibold";
+}
+.footer--site ul li {
+  font-size: 13px;
+  font-family: "NanumBarunGothic";
+  margin-bottom: 10px;
+}
+.footer--imfo {
+  border-top: 1px solid rgb(95, 77, 63);
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.information {
+  margin-top: 30px;
+  font-family: "NanumBarunGothic";
+  font-size: 13px;
+  color: #5f4d3f;
+}
+.information ul {
+  position: relative;
+  display: flex;
+  line-height: 25px;
+}
+.information li {
+  padding: 0 10px;
+  position: relative;
+}
+.information li::before {
+  content: "|";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.information li:last-child::before {
+  display: none;
+}
+.information li:first-child {
+  padding-left: 0;
+}
+.information p {
+  line-height: 24px;
+}
+
+.footer--sns .icons{
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0 0;
+  padding: 6.5px 0;
+}
+.footer--sns .icons .icon{
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+.fs01 {
+  color: #cf661a;
+}
+.fs02 {
+  font-weight: bold;
+}
+.fs03 {
+  font-size: 24px;
+  margin: 55px auto 35px;
+  color: #cf661a;
+  font-family: "Archer Semibold";
+}

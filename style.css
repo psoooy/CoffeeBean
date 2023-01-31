@@ -1,379 +1,120 @@
-@font-face {
-  font-family: "NanumBarunGothic";
-  font-style: normal;
-  font-weight: 400;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
-      format("embedded-opentype"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
-      format("woff"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
-      format("truetype");
+/* color */
+.red01{
+    background-color: #ffebee;
 }
-
-@font-face {
-  font-family: "NanumBarunGothic";
-  font-style: normal;
-  font-weight: 700;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
-      format("woff"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
-      format("truetype");
+.red02{
+    background-color: #ffcdd2;
 }
-
-@font-face {
-  font-family: "NanumBarunGothic";
-  font-style: normal;
-  font-weight: 300;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
-      format("embedded-opentype"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
-      format("woff"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
-      format("truetype");
+.red03{
+    background-color: #ef9a9a;
 }
-@font-face {
-  font-family: "Archer Semibold";
-  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot");
-  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.svg#Archer Semibold")
-      format("svg");
+.red04{
+    background-color: #e57373;
 }
-.nanumbarungothic * {
-  font-family: "NanumBarunGothic", sans-serif;
+.red05{
+    background-color: #ef5350;
 }
-
-/* 전체 */
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.red06{
+    background-color: #f44336;
 }
-
-/* layout */
-.layout--width {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+.red07{
+    background-color: #e53935;
 }
-
-/* header */
-.util_menu {
-  background: #eee;
-  height: 40px;
+.red08{
+    background-color: #d32f2f;
 }
-.util_menu ul {
-  display: flex;
-  justify-content: flex-end;
+.red09{
+    background-color: #c62828;
 }
-.util_menu ul li {
-  line-height: 40px;
-  margin-right: 20px;
-}
-.util_menu ul li a {
-  font-family: "NanumBarunGothic";
-  font-size: 14px;
-  color: rgb(51, 51, 51);
-  line-height: 40px;
-}
-.util_menu ul li.login {
-  padding-right: 20px;
-  border-right: 1px solid rgb(228, 228, 228);
-}
-.btn_h_mbr {
-  background: rgb(47, 28, 17);
-  width: 60px;
-}
-.inner_header1 {
-  height: 100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-
-  
-}
-.inner_header2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1200px;
-  height: 100%;
-}
-.logo{
-  width: 93px;
-}
-.gnb ul {
-  display: flex;
-}
-.gnb ul li {
-  padding: 30px;
-}
-.gnb ul li a {
-  font-weight: 700;
-}
-.btnSearch{
-  width: 20px;
-  font-size: 20px;
-  color: #f38200;
-}
-
-/* body */
-/* --배너 */
-
-/* --제품리스트 */
-.prod--list--wrap {
-  text-align: center;
-  color: #333;
-}
-.md--box{
-  height: 455px;
-  width: 300px;
-  background: transparent;
-}
-.md--list {
-  position: relative;
-}
-.md--box--wrap {
-  display: flex;
-}
-.md--img {
-  width: 300px;
-  height: 300px;
-}
-.md--price {
-  font-size: 14px;
-}
-.md--tit {
-  font-size: 18px;
-  font-family: "Archer Semibold", "NanumBarunGothic";
-  font-weight: 700;
-  margin: 15px 0;
-}
-.md--txt {
-  margin: 0 0 15px;
-  font-size: 14px;
-}
-.md--price {
-  font-size: 14px;
-  font-family: "NanumBarunGothic";
-  color: #cf661a;
-}
-.new--list{
-  position: relative;
-}
-.new--tit {
-  margin: 0 0 15px;
-  color: #cf661a;
-  font-size: 18px;
-  font-family: "Archer Semibold", "NanumBarunGothic";
-}
-.new--img {
-  width: 380px;
-  height: 470px;
-  background-color: #fdd835;
-}
-.new--box--wrap {
-  display: flex;
-  justify-content: space-between;
-}
-.new--box{
-  width: 380px;
-  height: 585px;
-}
-.new--tit {
-  margin: 15px auto;
-  font-size: 18px;
-}
-
-.slider--btn {
-  background-color: salmon;
-  position: relative
-}
-
-.test {
-  display: flex;
-  justify-content: center;
-  gap: 40px; /*gap 을 이용하여 사이 간격 벌려주기 , margin 을 사용해도 되지만 margin 은 원하는 사이만의 거리를 늘릴 수 없음 */
-}
-.test .play {
-  /* position: relative;  */
-  width: 8px;
-  height: 16px;
-  position: relative;
-}
-
-.test .play:before {
-  content: "";
-  position: absolute;
-  border-left: 8px solid #f38200;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  top: 0;
-  left: 0;
-}
-.test .play:after{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -20px;
-  width: 2px;
-  height: 100%;
-  background-color: #eee;
-}
-.test .dots {
-  display: flex;
-  gap: 10px;
-}
-.test .dots .dot{
-  background-color: #eee;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-}
-.test .dots .dot.active{
-  background-color: salmon;
+.red10{
+    background-color: #b71c1c;
 }
 
 
 
-/* sns */
-.sns--wrap {
-  padding: 55px 0 40px;
-  background-color: rgb(124, 81, 161);
-  margin-top: 50px;
+.purple01{
+    background-color: #f3e5f5;
 }
-.sns--tit {
-  margin-bottom: 25px;
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  font-family: "Archer-Semibold", "NanumBarunGothic";
+.purple02{
+    background-color: #e1bee7;
 }
-.sns--img1 {
-  display: flex;
+.purple03{
+    background-color: #ce93d8;
 }
-.sns--img1 .img {
-  width: 200px;
-  height: 200px;
+.purple04{
+    background-color: #ba68c8;
 }
-.sns--img2 {
-  display: flex;
+.purple05{
+    background-color: #ab47bc;
 }
-.sns--img2 .img {
-  width: 200px;
-  height: 200px;
+.purple06{
+    background-color: #9c27b0;
 }
-.sns--btn {
-  margin: 30px auto 0;
+.purple07{
+    background-color: #8e24aa;
 }
-.sns--btn .btn--insta {
-  background: #f38200;
-  color: white;
-  width: 400px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  font-size: 14px;
-  font-family: "Archer Semibold";
-  font-weight: 700;
-  letter-spacing: 1px;
+.purple08{
+    background-color: #7b1fa2;
+}
+.purple09{
+    background-color: #6a1b9a;
+}
+.purple10{
+    background-color: #4a148c;
 }
 
-/* footer */
-.footer--bg {
-  background-color: #e2e2e2;
+
+.lightblue01{
+    background-color: #e1f5fe;
 }
-.footer--site {
-  display: flex;
-  justify-content: space-between;
-  padding: 55px 0 50px;
+.lightblue02{
+    background-color: #b3e5fc;
 }
-.footer--site {
-  color: #4b2616;
+.lightblue03{
+    background-color: #81d4fa;
 }
-.footer--tit {
-  font-size: 18px;
-  color: rgb(207, 102, 26);
-  margin: 0 0 20px;
-  font-family: "Archer Semibold";
+.lightblue04{
+    background-color: #4fc3f7;
 }
-.footer--site ul li {
-  font-size: 13px;
-  font-family: "NanumBarunGothic";
-  margin-bottom: 10px;
+.lightblue05{
+    background-color: #29b6f6;
 }
-.footer--imfo {
-  border-top: 1px solid rgb(95, 77, 63);
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
+.lightblue06{
+    background-color: #03a9f4;
 }
-.information {
-  margin-top: 30px;
-  font-family: "NanumBarunGothic";
-  font-size: 13px;
-  color: #5f4d3f;
+.lightblue07{
+    background-color: #039be5;
 }
-.information ul {
-  position: relative;
-  display: flex;
-  line-height: 25px;
+.lightblue08{
+    background-color: #0288d1;
 }
-.information li {
-  padding: 0 10px;
-  position: relative;
+.lightblue09{
+    background-color: #0277bd;
 }
-.information li::before {
-  content: "|";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-.information li:last-child::before {
-  display: none;
-}
-.information li:first-child {
-  padding-left: 0;
-}
-.information p {
-  line-height: 24px;
+.lightblue10{
+    background-color: #01579b;
 }
 
-.footer--sns .icons{
-  display: flex;
-  justify-content: flex-end;
-  margin: 30px 0 0;
-  padding: 6.5px 0;
-}
-.footer--sns .icons .icon{
-  width: 40px;
-  height: 40px;
-  margin-left: 15px;
-}
-.fs01 {
-  color: #cf661a;
-}
-.fs02 {
-  font-weight: bold;
-}
-.fs03 {
-  font-size: 24px;
-  margin: 55px auto 35px;
-  color: #cf661a;
-  font-family: "Archer Semibold";
-}
+
+.lightgreen01{background-color: #f1f8e9;}
+.lightgreen02{background-color: #dcedc8;}
+.lightgreen03{background-color: #c5e1a5;}
+.lightgreen04{background-color: #aed581;}
+.lightgreen05{background-color: #9ccc65;}
+.lightgreen06{background-color: #8bc34a;}
+.lightgreen07{background-color: #7cb342;}
+.lightgreen08{background-color: #689f38;}
+.lightgreen09{background-color: #558b2f;}
+.lightgreen10{background-color: #33691e;}
+
+
+.amber01{background-color: #fff8e1;}
+.amber02{background-color: #ffecb3;}
+.amber03{background-color: #ffe082;}
+.amber04{background-color: #ffd54f;}
+.amber05{background-color: #ffca28;}
+.amber06{background-color: #ffc107;}
+.amber07{background-color: #ffb300;}
+.amber08{background-color: #ffa000;}
+.amber09{background-color: #ff8f00;}
+.amber10{background-color: #ff6f00;}
