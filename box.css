@@ -85,18 +85,68 @@
   width: 380px;
   height: 470px;
 }
-.btn--slide{
+.btn--slide {
   background: #ba68c8;
   width: 100%;
-  height: 30px;
+  height: 50px;
 }
-.sns {
+.sns--wrap {
   background: #d32f2f;
   width: 100%;
   height: 525px;
+  padding: 55px 0 40px;
+  text-align: center;
+}
+
+.sns--tit {
+  background: #f3e5f5;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.sns--box1 {
+  display: flex;
+}
+.sns--box2 {
+  display: flex;
+}
+.sns--img {
+  background: #ef9a9a;
+  width: 200px;
+  height: 200px;
+}
+.sns--img:nth-child(2n) {
+  background: #e57373;
+}
+.sns--btn {
+  position: relative;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+.sns--btn .btn--insta {
+  background: #f3e5f5;
+  position: absolute;
+  width: 400px;
+  height: 40px;
 }
 footer {
   background: #c62828;
   width: 100%;
   height: 475px;
+}
+.foot--box {
+  padding-bottom: 20px;
+}
+.foot--link {
+  background: #ab47bc;
+  padding: 55px 0 50px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 208px;
+}
+.foot--info {
+  background: #f3e5f5;
+  width: 100%;
+  height: 112px;
 }
