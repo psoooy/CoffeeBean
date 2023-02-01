@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Archer Semibold";
+  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot");
+  src: url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4c549f58ac7bed64fa40dbe9b3ca6ed4.svg#Archer Semibold")
+      format("svg");
+}
+/*전체 margin / layout 설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+.layout--width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*header 영역*/
+.menu {
+  width: 100%;
+  height: 40px;
+}
+.inner--menu {
+  width: 100%;
+  height: 100%;
+}
+.menu--text {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.menu--text li {
+  background: #fee134;
+  list-style: none;
+  margin-right: 20px;
+}
+.menu--text li:last-child {
+  margin: 0;
+}
+.menu--text li:first-child {
+  padding-right: 20px;
+  border-right: 1px solid rbg(228, 228, 228);
+  height: 100%;
+}
+.menu--text li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-family: "NanumBarunGothic";
+  font-weight: 400;
+  line-height: 40px;
+}
+.inner--menu--icon {
+  background: black;
+  display: block;
+  width: 60px;
+  height: 40px;
+}
+.inner--header {
+  width: 100%;
+  height: 100px;
+}
+.header--menu {
+  background: #c62828;
+  width: 100%;
+  height: 100%;
+}
+.header--text {
+  display: flex;
+}
+.header--text li {
+  list-style: none;
+}
+.header--text li a {
+  text-decoration: none;
+  color: black;
+}
+/*main 영역 -- 배너*/
+.main--banner {
+  background: #ef9a9a;
+  width: 100%;
+  height: 700px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+}
+.sub--banner {
+  background: #e57373;
+  width: 100%;
+  height: 400px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+}
+/*main 영역 -- 상품*/
+.md--products {
+  background: #f44336;
+  width: 100%;
+  margin: 55px auto;
+}
+.md--box {
+  background: #f44336;
+  width: 100%;
+}
+.md--tit {
+  background: #ffebee;
+  width: 100%;
+  height: 30px;
+}
+.md--product {
+  background: #ba68c8;
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+.md--pro--info {
+  background: #ffcdd2;
+  width: 25%;
+  height: 450px;
+}
+.md--pro--info:nth-child(2n) {
+  background: #ef9a9a;
+}
+.new--product {
+  display: flex;
+  justify-content: space-between;
+}
+.new--pro--info:nth-child(2n) {
+  background: #ef9a9a;
+}
+.new--box {
+  background: #e53935;
+  width: 100%;
+}
+.new--tit {
+  background: #ffebee;
+  width: 100%;
+  height: 30px;
+}
+.new--pro--info {
+  background: #ffcdd2;
+  width: 380px;
+  height: 470px;
+}
+.btn--slide {
+  background: #ba68c8;
+  margin-bottom: 35px;
+  width: 100%;
+  height: 80px;
+}
+
+/* sns 영역*/
+
+.sns--wrap {
+  background: #d32f2f;
+  width: 100%;
+  padding: 55px 0 40px;
+  text-align: center;
+}
+
+.sns--tit {
+  background: #f3e5f5;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.sns--box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sns--img {
+  background: #fff;
+  width: 200px;
+  height: 200px; /*이미지 넣고 빼기*/
+}
+.sns--img:nth-child(2n) {
+  background: #e57373;
+}
+.sns--btn {
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.sns--btn .btn--insta {
+  background: #f3e5f5;
+  width: 400px;
+  height: 40px;
+}
+/*footer 영역*/
+
+footer {
+  background: #c62828;
+  width: 100%;
+}
+.foot--box {
+  padding-bottom: 20px;
+}
+.foot--link {
+  background: #ab47bc;
+  padding: 55px 0 50px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 208px;
+}
+.foot--info {
+  background: #f3e5f5;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.info--text {
+  background: #fee134;
+  width: 660px;
+  height: 112px;
+}
+.info--snsicons {
+  background: #fee134;
+  width: 205px;
+  height: 53px;
+  padding: 6.5px 0;
+}
+
+/* 반응형 작업 */
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .inner--header {
+    height: 60px;
+  }
+  .main--banner {
+    height: 405px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+  }
+  .sub--banner {
+    height: 231px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+  }
+
+  /* 상품 */
+  .product--list {
+    margin: 55px 20px 0;
+  }
+  .md--tit {
+    margin-bottom: 35px;
+  }
+  .md--pro--info {
+    width: 33.3333%;
+  }
+  .md--product .md--pro--info:last-child {
+    display: none;
+  }
+
+  .new--tit {
+    margin-bottom: 35px;
+  }
+  .new--product {
+    gap: 30px;
+  }
+  .new--pro--info {
+    width: 50%;
+    height: 750px;
+  }
+  .new--pro--info:last-child {
+    display: none;
+  }
+  .sns--box {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  .sns--img {
+    width: 25%;
+  }
+  .foot--link {
+    display: none;
+  }
+  .foot--info {
+    flex-direction: column-reverse;
+  }
+  .info--text {
+    width: 100%;
+  }
+  .info--snsicons {
+    margin: 0 0 25px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main--banner {
+    height: 916px;
+  }
+  .sub--banner {
+    height: 470px;
+  }
+  .md--pro--info:nth-child(n + 3) {
+    display: none;
+  }
+  .md--pro--info {
+    width: 50%;
+    height: 475px;
+  }
+  .new--pro--info:nth-child(N + 2) {
+    display: none;
+  }
+  .new--pro--info {
+    width: 100%;
+    height: 880px;
+  }
+
+  .sns--img {
+    width: 33.3333%;
+  }
+  .sns--img a {
+    display: block;
+  }
+  .sns--img img {
+    width: 100%;
+  }
+} ;
