@@ -1,0 +1,96 @@
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .inner--header {
+    height: 60px;
+  }
+  .main--banner {
+    height: 405px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+  }
+  .sub--banner {
+    height: 231px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+  }
+
+  /* 상품 */
+  .product--list {
+    margin: 55px 20px 0;
+  }
+  .md--tit {
+    margin-bottom: 35px;
+  }
+  .md--pro--info {
+    width: 33.3333%;
+  }
+  .md--product .md--pro--info:last-child {
+    display: none;
+  }
+
+  .new--tit {
+    margin-bottom: 35px;
+  }
+  .new--product {
+    gap: 30px;
+  }
+  .new--pro--info {
+    width: 50%;
+    height: 750px;
+  }
+  .new--pro--info:last-child {
+    display: none;
+  }
+  .sns--box {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  .sns--img {
+    width: 25%;
+  }
+  .foot--link {
+    display: none;
+  }
+  .foot--info {
+    flex-direction: column-reverse;
+  }
+  .info--text {
+    width: 100%;
+  }
+  .info--snsicons {
+    margin: 0 0 25px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main--banner {
+    height: 916px;
+  }
+  .sub--banner {
+    height: 470px;
+  }
+  .md--pro--info:nth-child(n + 3) {
+    display: none;
+  }
+  .md--pro--info {
+    width: 50%;
+    height: 475px;
+  }
+  .new--pro--info:nth-child(N + 2) {
+    display: none;
+  }
+  .new--pro--info {
+    width: 100%;
+    height: 880px;
+  }
+
+  .sns--img {
+    width: 33.3333%;
+  }
+  .sns--img a {
+    display: block;
+  }
+  .sns--img img {
+    width: 100%;
+  }
+} ;
