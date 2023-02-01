@@ -61,6 +61,7 @@
 }
 /*header 영역*/
 .menu {
+  background: #eeeeee;
   width: 100%;
   height: 40px;
 }
@@ -69,22 +70,18 @@
   height: 100%;
 }
 .menu--text {
+  position: relative;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 .menu--text li {
-  background: #fee134;
   list-style: none;
   margin-right: 20px;
 }
-.menu--text li:last-child {
-  margin: 0;
-}
-.menu--text li:first-child {
+
+.btn--login{
   padding-right: 20px;
-  border-right: 1px solid rbg(228, 228, 228);
-  height: 100%;
 }
 .menu--text li a {
   text-decoration: none;
@@ -95,10 +92,13 @@
   line-height: 40px;
 }
 .inner--menu--icon {
-  background: black;
+  background: #2f1c11;
   display: block;
   width: 60px;
   height: 40px;
+}
+.inner--menu--icon .fa-solid{
+  color: white;
 }
 .inner--header {
   width: 100%;
