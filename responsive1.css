@@ -80,7 +80,7 @@
   margin-right: 20px;
 }
 
-.btn--login{
+.btn--login {
   padding-right: 20px;
 }
 .menu--text li a {
@@ -97,7 +97,7 @@
   width: 60px;
   height: 40px;
 }
-.inner--menu--icon .fa-solid{
+.inner--menu--icon .fa-solid {
   color: white;
 }
 .inner--header {
@@ -105,12 +105,30 @@
   height: 100px;
 }
 .header--menu {
-  background: #c62828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
+.header--logo {
+  width: 93px;
+}
 .header--text {
   display: flex;
+  font-family: Arial, "NanumBarunGothic";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.header--text li a {
+  padding: 0 31px;
+  line-height: 100px;
+}
+.header--search {
+  color: #e57373;
+  width: 20px;
+  font-size: 23px;
 }
 .header--text li {
   list-style: none;
@@ -120,15 +138,27 @@
   color: black;
 }
 /*main 영역 -- 배너*/
+.banner {
+  background: #fee134;
+  display: block;
+  text-align: center;
+}
 .main--banner {
-  background: #ef9a9a;
-  width: 100%;
-  height: 700px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+  margin: 0 auto;
+}
+.main--banner--pc {
+  display: block; /* a 태그는 물처럼 형체가 없기 때문에 그 부분을 형체가 있는 얼음처럼 만들어줌  */
+  height: 700px; /* width 값이 줄어든다고 해서 이미지의 크기가 변하는게 아니므로 고정 시켜줌 */
+}
+.main--banner--ta {
+  display: none;
+}
+.main--banner--mo {
+  display: none;
 }
 .sub--banner {
-  background: #e57373;
-  width: 100%;
-  height: 400px; /* 이미지 크기에 따라 다르므로 삭제 해야 하나 ?? */
+  /* background: #e57373; */
+  height: 400px; /* width 값이 줄어든다고 해서 이미지의 크기가 변하는게 아니므로 고정 시켜줌 */
 }
 /*main 영역 -- 상품*/
 .md--products {
