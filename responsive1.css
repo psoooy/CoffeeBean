@@ -185,19 +185,19 @@
 .md--products {
   /* background: #f44336; */
   width: 100%;
-  margin: 55px auto;
+  margin: 55px auto 0;
 }
 .md--box {
   width: 100%;
 }
 .md--tit {
-  background: #ffebee;
   font-family: "Archer Semibold", "NanumBarunGothic";
   font-size: 24px;
   text-align: center;
   color: #cf661a;
   width: 100%;
   height: 30px;
+  margin: 30px;
 }
 .md--product {
   display: flex;
@@ -238,27 +238,37 @@
   display: flex;
   justify-content: space-between;
 }
-.new--pro--info:nth-child(2n) {
-  background: #ef9a9a;
-}
 .new--box {
-  background: #e53935;
   width: 100%;
 }
 .new--tit {
-  background: #ffebee;
-  width: 100%;
-  height: 30px;
+  font-family: "Archer Semibold", "NanumBarunGothic";
+  font-size: 24px;
+  font-weight: 700;
+  color: #cf661a;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .new--pro--info {
-  background: #ffcdd2;
   width: 380px;
-  height: 470px;
+  height: 585px;
+}
+.new--pro--info .new--img img {
+  display: block;
+}
+.new--pro--info .new--text {
+  width: 100%;
+  height: 90px;
+  margin-top: 25px;
+  font-family: "Archer Semibold", "NanumBarunGothic";
+  font-size: 18px;
+  line-height: 18px;
+  color: #cf661a;
+  text-align: center;
 }
 
 /* 상품 하단 슬라이드 버튼 */
 .btn--slide {
-  margin-bottom: 35px;
   width: 100%;
   height: 80px;
 }
@@ -277,7 +287,7 @@
 .slide--button--play::before {
   content: "";
   position: absolute;
-  border-left: 8px solid #fee134;
+  border-left: 8px solid orange;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
 }
@@ -300,7 +310,52 @@
   height: 16px;
   border-radius: 50%;
 }
+.slide--button--dots .dot.active {
+  background: orange;
+}
 
+.btn--slide2 {
+  width: 100%;
+  height: 80px;
+}
+.button2 {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.slide--button--play2 {
+  position: relative;
+  width: 10px;
+  height: 100%;
+}
+.slide--button--play2::before {
+  content: "";
+  position: absolute;
+  border-left: 8px solid orange;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.slide--button--play2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 2px;
+  height: 100%;
+  background-color: #eee;
+}
+.slide--button--dots2 {
+  display: flex;
+  gap: 10px;
+}
+.slide--button--dots2 .dot2 {
+  background-color: #eee;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
 /* sns 영역*/
 
 .sns--wrap {
